@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700&display=swap');
 *{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
 }
+
+p.text.typing {
+    top: 0;
+    left: 2em;
+}
+
 
 button.form_action_sent {
     width: 55%;
@@ -21,24 +27,36 @@ button.form_action_sent {
     cursor: pointer;
 }
 
+button.form_action_sent:hover {
+    background: white;
+    color: #795548;
+}
+
 textarea.form_fill_info {
     width: 100% !important;
     height: 150px;
     resize: none;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 p.text {
+    padding: 0 5px;
     position: absolute;
     top: 50%;
     left: 1.5em;
     transform: translate(4px, -50%);
     font-weight: 600;
+    background: #795548;
+    transition: 0.5s;
 }
 
 #message p {
-    top: 15%;
+    top: 1.5em;
     transform: translate(0, 0);
+}
+
+#message p.typing {
+    top: -9px;
 }
 
 p.text:first-letter {
@@ -184,5 +202,5 @@ div#app {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
